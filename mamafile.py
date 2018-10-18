@@ -12,7 +12,7 @@ class NanoMesh(mama.BuildTarget):
         return not ('NO_TESTS' in self.args)
 
     def dependencies(self):
-        self.add_git('ReCpp', 'https://github.com/RedFox20/ReCpp.git')
+        self.add_git('ReCpp', 'https://github.com/wolfprint3d/ReCpp.git')
         if self.enable_fbxsdk():
             self.add_local('FbxSdk', 'src/FBX')
 
